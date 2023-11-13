@@ -1,0 +1,284 @@
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+:root {
+  --orange: #f16718;
+  --gray: #7b8bad;
+  --dark: #162542;
+  --ligth-orange: #ff9b62;
+  --bg-color: #f2f2f2;
+  --btn-gray: #e8eff2;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.nav {
+  margin: 55px 0px 83px 0px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--orange);
+}
+
+.nav__button {
+  padding: 16px 27px 16px 26px;
+  border: none;
+  color: var(--dark);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.62;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.btn-gray {
+  background-color: var(--btn-gray);
+  transition: 0.3s ease-in;
+}
+
+.btn-gray:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.header_context {
+  margin-bottom: 30px;
+}
+
+.context__text {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+}
+
+.context__h1 {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--dark);
+  margin-top: 60px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.text__p {
+  color: #7b8bad;
+}
+.context__p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.44;
+  margin-bottom: 40px;
+}
+
+.context__btn {
+  background-color: var(--orange);
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.context__btn:hover {
+  background-color: var(--btn-gray);
+  color: var(--dark);
+}
+
+.context__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.context__a {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.context__inner {
+  display: flex;
+  gap: 125px;
+}
+
+.header__image {
+  width: 540px;
+  height: 480px;
+  position: relative;
+}
+
+.right__block {
+  position: absolute;
+  top: 0;
+  right: -165px;
+}
+
+.image__orange {
+  width: 255px;
+  height: 480px;
+}
+
+.image_kbord {
+  height: 480px;
+}
+
+.about {
+  margin-bottom: 168px;
+}
+.about__content {
+  display: flex;
+  gap: 125px;
+  position: relative;
+}
+.left__block {
+  position: absolute;
+  bottom: 0;
+  left: -165px;
+}
+
+.about__text .text__p {
+  width: 255px;
+}
+
+.about__img-block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.about__h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.12;
+  color: var(--dark);
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  transition: 0.4s ease-in;
+}
+
+.about__h2:hover {
+  opacity: 0.3;
+}
+
+.about__text {
+  margin: 112px 0 103px 0;
+}
+
+.about__p {
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.link__item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.link__block {
+  margin-bottom: 128px;
+}
+
+.link__logo {
+  margin-bottom: 48px;
+}
+
+.link__textcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.link__h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.16;
+  color: var(--dark);
+  transition: 0.4s ease-in;
+}
+
+.link__h3:hover {
+  opacity: 0.3;
+}
+
+.copyright__a {
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--gray);
+  font-family: "Barlow", sans-serif;
+  text-transform: capitalize;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.span__copyright {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .context__img {
+    width: 478px;
+    height: 425px;
+  }
+  .about__content {
+    flex-direction: column;
+  }
+  .about__text {
+    padding: 0;
+  }
+  .container {
+    padding-left: 39px;
+    padding-right: 40px;
+  }
+
+  .right__block,
+  .left-block {
+    display: none;
+  }
+
+  .link__item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .container {
+    max-width: 100%;
+    margin-left: 24px;
+    margin-right: 21px;
+  }
+
+  .context__inner,
+  .about__content,
+  .header__content {
+    flex-direction: column;
+  }
+
+  .link__item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
